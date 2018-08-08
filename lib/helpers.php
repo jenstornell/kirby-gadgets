@@ -4,8 +4,12 @@ class gadget {
     return in_array($_SERVER['REMOTE_ADDR'], $whitelist);
   }
 
-  function isCollection($collection) {
-    return(is_a($collection, 'Kirby\Cms\Pages'));
+  function isPages($pages) {
+    return(is_a($pages, 'Kirby\Cms\Pages'));
+  }
+
+  function isPage($collection) {
+    return(is_a($collection, 'Kirby\Cms\Page'));
   }
 
   function slug($string) {
