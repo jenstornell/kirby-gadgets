@@ -2,11 +2,12 @@
 
 ### `isLocalhost`
 
-By default it check if the server is `::1` or `localhost`. You can also send a whitelist if needed.
+It will check if the server is `::1` or `localhost`.
 
 ```php
-<?= gadget::isLocalhost() ?>
-<?= gadget::isLocalhost($whitelist = []) ?>
+if(gadget::isLocalhost()) {
+    echo 'Is localhost';
+}
 ```
 
 ### `isPage`
@@ -14,7 +15,9 @@ By default it check if the server is `::1` or `localhost`. You can also send a w
 Check if the current variable is a page object.
 
 ```php
-<?= gadget::isPage($page) ?>
+if(gadget::isPage($page)) {
+    echo 'This is a page object';
+}
 ```
 
 ### `isPages`
@@ -22,7 +25,9 @@ Check if the current variable is a page object.
 Check if the current variable is a pages object.
 
 ```php
-<?= gadget::isPages($pages) ?>
+if(gadget::isPages($page)) {
+    echo 'This is a pages object';
+}
 ```
 
 ### `slug`
@@ -30,7 +35,7 @@ Check if the current variable is a pages object.
 The built in `str::slug()` function converts `ä` to `ae` which make no sense in Sweden. This slug function converts `ä` to `a`.
 
 ```php
-<?= gadget::slug('Min röda är blå') ?>
+echo gadget::slug('Min röda är blå');
 ```
 
 The output of the above will be:
