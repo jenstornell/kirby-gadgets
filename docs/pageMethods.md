@@ -1,6 +1,6 @@
 # Page methods
 
-### `hasParents`
+### `$page->hasParents`
 
 Check if the current page has parents.
 
@@ -12,7 +12,7 @@ if($page->hasParents()) {
 
 **Source:** @texnixe - https://forum.getkirby.com/t/if-has-parents/4874/2
 
-### `rootParent`
+### `$page->rootParent`
 
 Always return the parent at the root level.
 
