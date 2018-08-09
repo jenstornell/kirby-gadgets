@@ -10,6 +10,20 @@ if(gadget::isLocalhost()) {
 }
 ```
 
+**Source:** Jens Törnell - https://stackoverflow.com/a/21702853/148496
+
+### isLoggedIn
+
+Checks if you are logged in.
+
+```php
+if(gadget::isLoggedIn()) {
+    echo 'You are logged in';
+}
+```
+
+**Source:** Jens Törnell
+
 ### `isPage`
 
 Check if the current variable is a page object.
@@ -20,6 +34,8 @@ if(gadget::isPage($page)) {
 }
 ```
 
+**Source:** Jens Törnell
+
 ### `isPages`
 
 Check if the current variable is a pages object.
@@ -29,6 +45,8 @@ if(gadget::isPages($page)) {
     echo 'Pages object';
 }
 ```
+
+**Source:** @texnixe - https://forum.getkirby.com/t/check-if-the-object-is-a-page-or-collection/6464/2
 
 ### `slug`
 
@@ -41,3 +59,13 @@ echo gadget::slug('Min röda är inte blå');
 The output of the above will be:
 
 >min-roda-troja-ar-inte-bla
+
+**Source:** Unknown
+
+### `stripHtmlComments`
+
+```php
+echo gadget::stripHtmlComments('<div>Hello <!-- This is a comment--> </div>');
+```
+
+**Source:** https://davidwalsh.name/remove-html-comments-php

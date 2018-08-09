@@ -36,4 +36,12 @@ class gadget {
         )
     );
   }
+
+  function isLoggedIn() {
+    return (bool)kirby()->user();
+  }
+
+  function stripHtmlComments($html) {
+    return preg_replace('/<!--(.|\s)*?-->/', '', $html);
+  }
 }

@@ -1,15 +1,5 @@
 # Page methods
 
-### `multilevelFindBy`
-
-This method works just like `FindBy` but for pages at any level down from the current page.
-
-```php
-if($new_page = $page->multilevelFindBy('slug', 'trees-and-stars-and-stuff')) {
-    echo "$new_page found";
-}
-```
-
 ### `hasParents`
 
 Check if the current page has parents.
@@ -19,3 +9,15 @@ if($page->hasParents()) {
     echo 'Parents found';
 }
 ```
+
+**Source:** @texnixe - https://forum.getkirby.com/t/if-has-parents/4874/2
+
+### `rootParent`
+
+Always return the parent at the root level.
+
+```php
+echo $page->rootParent();
+```
+
+**Source:** @ivinteractive - https://forum.getkirby.com/t/get-root-page-of-child/3295/3
