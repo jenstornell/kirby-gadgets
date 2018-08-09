@@ -1,6 +1,8 @@
 # Kirby Gadgets
 
-This is a set of helpers and page methods. You can install it as a plugin, or just copy paste the things that you want from the code.
+This is a set of helpers and page methods.
+
+You can install it as a plugin, or just copy paste the things that you want from the code.
 
 - **Version:** 0.1 beta
 - **Requirement:** Kirby 3
