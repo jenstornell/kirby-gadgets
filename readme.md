@@ -8,7 +8,7 @@ This is a set of helpers and page methods. You can install it as a plugin, or ju
 - [Disclaimer](https://devonera.se/docs/disclaimer/?user=jenstornell&plugin=kirby-gadgets)
 - [Donate](https://devonera.se/docs/donate/?user=jenstornell&plugin=kirby-gadgets)
 
-## Gadgets
+## Documentation
 
 - [Helpers](docs/helpers.md)
 - [Page methods](docs/pageMethods.md)
@@ -27,7 +27,7 @@ if(gadget::isLocalhost()) {
 }
 ```
 
-**[Documentation for Helpers](docs/helpers.md)**
+**[See all helpers](docs/helpers.md)**
 
 ### Page methods
 
@@ -41,7 +41,7 @@ Always return the parent at the root level.
 echo $page->rootParent();
 ```
 
-**[Documentation for page methods](docs/pageMethods.md)**
+**[See all page methods](docs/pageMethods.md)**
 
 ## Utility functions
 
