@@ -64,6 +64,8 @@ The output of the above will be:
 
 ### `gadget::stripHtmlComments`
 
+Strip HTML comments from a string.
+
 ```php
 echo gadget::stripHtmlComments('<div>Hello <!-- This is a comment--> </div>');
 ```

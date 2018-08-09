@@ -12,8 +12,23 @@ You can install it as a plugin, or just copy paste the things that you want from
 
 ## Documentation
 
+- [Field methods](docs/fieldMethods.md)
 - [Helpers](docs/helpers.md)
 - [Page methods](docs/pageMethods.md)
+
+## Field methods
+
+Some additional field methods. I'll give you an example below.
+
+### `stripHtmlComments`
+
+Strip HTML comments from the field value.
+
+```php
+echo $page->text()->stripHtmlComments();
+```
+
+**[See all field methods](docs/fieldMethods.md)**
 
 ## Helpers
 
