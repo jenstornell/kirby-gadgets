@@ -27,13 +27,21 @@ if(gadget::isLocalhost()) {
 }
 ```
 
-**See docs for all [Helpers](docs/helpers.md)**
+**[Documentation for Helpers](docs/helpers.md)**
 
 ### Page methods
 
-Kirby has a lot of page methods. Still, there are some nice ones that is not built in.
+Kirby has a lot of page methods. There are some nice ones that are not built in. I'll give you an example below.
 
-**See docs for [Page methods](docs/pageMethods.md)**
+### `$page->rootParent`
+
+Always return the parent at the root level.
+
+```php
+echo $page->rootParent();
+```
+
+**[Documentation for page methods](docs/pageMethods.md)**
 
 ## Utility functions
 
