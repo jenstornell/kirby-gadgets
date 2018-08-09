@@ -1,6 +1,6 @@
 # Field methods
 
-### `stripHtmlComments`
+### `$page->text()->stripHtmlComments`
 
 Strip HTML comments from the field value.
 
