@@ -1,6 +1,6 @@
 # Helpers
 
-### `isLocalhost`
+### `gadget::isLocalhost`
 
 It will check if the server is `::1` or `localhost`.
 
@@ -12,7 +12,7 @@ if(gadget::isLocalhost()) {
 
 **Source:** Jens Törnell - https://stackoverflow.com/a/21702853/148496
 
-### isLoggedIn
+### `gadget::isLoggedIn`
 
 Checks if you are logged in.
 
@@ -24,7 +24,7 @@ if(gadget::isLoggedIn()) {
 
 **Source:** Jens Törnell
 
-### `isPage`
+### `gadget::isPage`
 
 Check if the current variable is a page object.
 
@@ -36,7 +36,7 @@ if(gadget::isPage($page)) {
 
 **Source:** Jens Törnell
 
-### `isPages`
+### `gadget::isPages`
 
 Check if the current variable is a pages object.
 
@@ -48,7 +48,7 @@ if(gadget::isPages($page)) {
 
 **Source:** @texnixe - https://forum.getkirby.com/t/check-if-the-object-is-a-page-or-collection/6464/2
 
-### `slug`
+### `gadget::slug`
 
 The built in `str::slug()` function converts `ä` to `ae` which make no sense in Sweden. This slug function converts `ä` to `a`.
 
@@ -62,7 +62,7 @@ The output of the above will be:
 
 **Source:** Unknown
 
-### `stripHtmlComments`
+### `gadget::stripHtmlComments`
 
 ```php
 echo gadget::stripHtmlComments('<div>Hello <!-- This is a comment--> </div>');
