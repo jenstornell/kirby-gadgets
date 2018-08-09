@@ -46,7 +46,7 @@ print_r($collection);
 
 The result will now look like below.
 
-```php
+```text
 Kirby\Cms\Pages Object
 (
     [0] => projects/lame-light-effects
@@ -64,7 +64,7 @@ $collection = $page->collectionByIndex($limit = 3, $loop = false;
 print_r($collection);
 ```
 
-```php
+```text
 Kirby\Cms\Pages Object
 (
     [0] => projects/lame-light-effects
