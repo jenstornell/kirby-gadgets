@@ -1,4 +1,6 @@
 <?php
+include __DIR__ . '/collectionByIndex.php';
+
 Kirby::plugin('jenstornell/gadgets-page-methods', [
     'pageMethods' => [
         'hasParents' => function() {
@@ -9,15 +11,9 @@ Kirby::plugin('jenstornell/gadgets-page-methods', [
                 return $this;
             return $this->parents()->last();
         },
-        'collectionByIndex' => function($limit = 1, $loop = true) {
-            $pages = $this->siblings();            
-            $offset  = $pages->indexOf($this)+1;
-            $items = $pages->slice($offset, $limit);
-
-            if(!$loop) return $items;
-            
-            $remainder = $pages->limit($limit-$items->count());
-            return $items->merge($remainder);
+        'collectionByIndex' => function($limit = 1, $offset = 0, $loop = true) {
+            $CollectionByIndex = new CollectionByIndex();
+            return $CollectionByIndex->get($this, $limit, $offset, $loop);
         }
     ]
 ]);
