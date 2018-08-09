@@ -24,9 +24,7 @@ echo $page->rootParent();
 
 ### `$page->collectionByIndex`
 
-This method will return a collection of pages.
-
-By default pages are added from the current page index until it reaches the limit. If the index is near the end, it will start from the beginning of the collection until the limit is reached. However, it will not pass the end of the collection more than one time.
+This method will build a collection by starting from an index.
 
 ```php
 $collection = $page->collectionByIndex($limit = 3, $offset = -1, $loop = true);
