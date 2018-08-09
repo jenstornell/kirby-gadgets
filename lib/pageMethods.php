@@ -10,8 +10,7 @@ Kirby::plugin('jenstornell/gadgets-page-methods', [
             return $this->parents()->last();
         },
         'collectionByIndex' => function($limit = 1, $loop = true) {
-            $pages = $this->siblings();
-            print_r($pages);
+            $pages = $this->siblings();            
             $offset  = $pages->indexOf($this)+1;
             $items = $pages->slice($offset, $limit);
 
