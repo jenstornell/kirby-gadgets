@@ -10,6 +10,9 @@ This is a set of helpers and page methods. You can install it as a plugin, or ju
 
 ## Gadgets
 
+- [Helpers](docs/helpers.md)
+- [Page methods](docs/pageMethods.md)
+
 ### Helpers
 
 A helper is a simple static method. I'll give you an example below.
