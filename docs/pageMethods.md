@@ -24,51 +24,17 @@ echo $page->rootParent();
 
 ### `$page->collectionByIndex`
 
-This method will start at the current page index and then walk until it hits the limit. If the pages ends before that, it will start over until the limit is reached.
+This method will return a collection of pages.
 
-Let's say you are on the `drones` and use a limit of 3. Your current siblings are like below.
-
-```text
-Kirby\Cms\Pages Object
-(
-    [0] => projects/trees-and-stars-and-stuff
-    [1] => projects/oceans-are-quite-nice
-    [2] => projects/glowing-in-the-dark-tent
-    [3] => projects/drones
-    [4] => projects/lame-light-effects
-)
-```
+By default pages are added from the current page index until it reaches the limit. If the index is near the end, it will start from the beginning of the collection until the limit is reached. However, it will not pass the end of the collection more than one time.
 
 ```php
-$collection = $page->collectionByIndex($limit = 3);
+$collection = $page->collectionByIndex($limit = 3, $offset = -1, $loop = true);
 print_r($collection);
 ```
 
-The result will now look like below.
-
-```text
-Kirby\Cms\Pages Object
-(
-    [0] => projects/lame-light-effects
-    [1] => projects/trees-and-stars-and-stuff
-    [2] => projects/oceans-are-quite-nice
-)
-```
-
-The collection now contains the next page which is `lame-light-effects`. Because the siblings end, it will start over and att the two first siblings.
-
-You can also disable the looping that will fill out the collection with the first pages. In that case it will look like below.
-
-```php
-$collection = $page->collectionByIndex($limit = 3, $loop = false;
-print_r($collection);
-```
-
-```text
-Kirby\Cms\Pages Object
-(
-    [0] => projects/lame-light-effects
-)
-```
+- The above will try to output 3 pages in the collection.
+- It will start on the previous page (-1).
+- If it reaches the end it will start over (loop is true).
 
 **Source:** @texnixe, @jenstornell - https://forum.getkirby.com/t/filter-interval-of-pages/5893/6
