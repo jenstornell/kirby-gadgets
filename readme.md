@@ -13,7 +13,7 @@ This is a set of helpers and page methods. You can install it as a plugin, or ju
 - [Helpers](docs/helpers.md)
 - [Page methods](docs/pageMethods.md)
 
-### Helpers
+## Helpers
 
 A helper is a simple static method. I'll give you an example below.
 
@@ -29,7 +29,7 @@ if(gadget::isLocalhost()) {
 
 **[See all helpers](docs/helpers.md)**
 
-### Page methods
+## Page methods
 
 Kirby has a lot of page methods. There are some nice ones that are not built in. I'll give you an example below.
 
