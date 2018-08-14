@@ -53,7 +53,7 @@ if(gadget::isPages($page)) {
 The built in `str::slug()` function converts `ä` to `ae` which make no sense in Sweden. This slug function converts `ä` to `a`.
 
 ```php
-echo gadget::slug('Min röda är inte blå');
+echo gadget::slug('Min röda tröja är inte blå');
 ```
 
 The output of the above will be:
